@@ -1,0 +1,21 @@
+Create a virtual environment and install the requirements:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Install Django 
+
+```bash
+pip install django
+pip freeze  #To check
+
+```
+
+Start Project Using Django
+```bash
+django-admin startproject pre_school .
+```
+
+Manage.py is called when we start the projects and is used to call statics and other bunch of stuff, but is only good for local system so we use config folder so that we can separate production and local system setting and they don't get mixed up

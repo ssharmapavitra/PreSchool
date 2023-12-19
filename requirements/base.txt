@@ -1,0 +1,7 @@
+autopep8==2.0.0
+distlib==0.3.8
+filelock==3.13.1
+platformdirs==4.1.0
+pycodestyle==2.9.1
+tomli==2.0.1
+virtualenv==20.25.0

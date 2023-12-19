@@ -1,0 +1,48 @@
+1. Building a Django App from Scratch:
+
+   - The video tutorial covers the step-by-step process of building a Django app.
+   - It includes everything from project setup to creating models, views, forms, and templates.
+   - The app will have various features like a homepage, about us page, contact form, policies, team members, and events.
+
+2. Setting Up the Virtual Environment:
+
+   - To keep project-specific dependencies separate, a virtual environment is installed and activated.
+   - Use the command `python -m venv` to create a virtual environment in the project directory.
+   - For Mac/Linux, activate the environment using `source venv/bin/activate`, and for Windows, use `venv\Scripts\activate.bat`.
+
+3. Installing Django and Creating the Project:
+
+   - Django is installed using the command `pip install Django`.
+   - Use `django-admin startproject` to create a new Django project.
+   - Configure the project's settings file, including different settings for development, staging, and production environments.
+   - Manage project-specific dependencies by creating a requirements directory.
+
+4. Creating Models:
+
+   - Start a new app within the project using `python manage.py startapp`.
+   - Define the models for the app, including fields like name, email, telephone, message, title, description, etc.
+   - Enhance models with additional functionality using the Django Extensions package, like activation status and timestamp fields.
+
+5. Registering Models in the Admin Panel:
+
+   - Create an admin.py file in the app's directory.
+   - Use the `admin.register` decorator to register the app's models in the admin panel.
+   - Customize the display and behavior of the models in the admin panel.
+
+6. Creating URLs:
+
+   - Create a urls.py file in the app's directory to handle app-specific URLs.
+   - Define URL patterns for the app, specifying corresponding views and templates.
+
+7. Adding CKEditor for Rich Text Editing:
+
+   - Install the Django CKEditor package using `pip install django-ckeditor`.
+   - Add CKEditor to the list of installed apps in the project's settings file.
+   - Configure CKEditor in the project's URLs file.
+   - Use the CKEditor widget in model fields that require rich text editing, like description or body.
+
+8. Making Migrations and Running the Server:
+   - Generate migration files for the app's models using `python manage.py makemigrations`.
+   - Apply the migrations and update the database schema with `python manage.py migrate`.
+   - Start the development server with `python manage.py runserver`.
+   - Access the app in the browser at `localhost:8000`.
